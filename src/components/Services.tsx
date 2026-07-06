@@ -4,7 +4,7 @@ import {
   FiSettings,
   FiGitBranch,
   FiPenTool,
-  FiClipboard,
+  // FiClipboard,
 } from "react-icons/fi";
 import SectionTitle from "./ui/SectionTitle";
 import ServiceCard from "./ui/ServiceCard";
