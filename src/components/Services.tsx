@@ -45,13 +45,13 @@ const services = [
     description:
       "Precise 2D and 3D CAD drafting for assembly drawings, general arrangements and manufacturing documentation.",
   },
-  {
-    icon: FiClipboard,
-    code: "06",
-    title: "Engineering Documentation",
-    description:
-      "Complete documentation packages — fabrication drawings, BOMs and specifications — organised for review and delivery.",
-  },
+  // {
+  //   icon: FiClipboard,
+  //   code: "06",
+  //   title: "Engineering Documentation",
+  //   description:
+  //     "Complete documentation packages — fabrication drawings, BOMs and specifications — organised for review and delivery.",
+  // },
 ];
 
 export default function Services() {

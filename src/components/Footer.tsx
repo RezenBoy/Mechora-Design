@@ -13,7 +13,7 @@ const services = [
   "Mechanical Design",
   "Piping Design",
   "CAD Drafting",
-  "Engineering Documentation",
+  // "Engineering Documentation",
 ];
 
 export default function Footer() {

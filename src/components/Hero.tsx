@@ -57,8 +57,8 @@ export default function Hero() {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="mt-6 max-w-xl text-base leading-relaxed text-slate-300 sm:text-lg"
           >
-            Professional CAD drafting, structural steel detailing, mechanical design,
-            piping systems and engineering documentation for industry.
+            Professional CAD drafting, structural steel detailing, mechanical design and
+            piping systems for industry.
           </motion.p>
 
           <motion.div
