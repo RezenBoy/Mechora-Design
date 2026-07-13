@@ -83,10 +83,10 @@ export default function Footer() {
             </h4>
             <ul className="space-y-3 text-sm">
               <li className="flex items-center gap-2.5">
-                <FiMail className="text-accent" /> hello@mechoradesigns.com.au
+                <FiMail className="text-accent" /> mechoradesigns@gmail.com
               </li>
               <li className="flex items-center gap-2.5">
-                <FiPhone className="text-accent" /> +61 2 8000 1234
+                <FiPhone className="text-accent" /> +91 84279 85803
               </li>
               <li className="flex items-center gap-2.5">
                 <FiMapPin className="text-accent" /> Sydney, NSW, Australia
