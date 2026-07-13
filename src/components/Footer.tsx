@@ -1,4 +1,4 @@
-import { FiMail, FiPhone, FiMapPin, FiLinkedin, FiTwitter, FiFacebook } from "react-icons/fi";
+import { FiMail, FiPhone, FiLinkedin, FiTwitter, FiFacebook } from "react-icons/fi";
 import Logo from "../assets/brandLogo.png";
 
 
