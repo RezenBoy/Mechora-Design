@@ -1,4 +1,6 @@
 import { FiMail, FiPhone, FiMapPin, FiLinkedin, FiTwitter, FiFacebook } from "react-icons/fi";
+import Logo from "../assets/brandLogo.png";
+
 
 const quickLinks = [
   { label: "Services", href: "#services" },
@@ -13,7 +15,6 @@ const services = [
   "Mechanical Design",
   "Piping Design",
   "CAD Drafting",
-  // "Engineering Documentation",
 ];
 
 export default function Footer() {
@@ -23,17 +24,18 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-4">
           <div>
             <div className="mb-4 flex items-center gap-2.5">
-              <svg width="26" height="26" viewBox="0 0 30 30" fill="none">
-                <rect x="1" y="1" width="28" height="28" rx="2" stroke="#2E86DE" strokeWidth="1.4" />
-                <path d="M8 22V8L15 22L22 8V22" stroke="#FFFFFF" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
+              <img
+                src={Logo}
+                alt="Mechora Designs"
+                className="h-14 w-auto object-contain"
+              />
               <span className="font-heading text-base font-bold text-white">
                 MECHORA <span className="text-accent">DESIGNS</span>
               </span>
             </div>
             <p className="text-sm leading-relaxed text-slate-400">
               Transforming ideas into precise engineering designs — structural,
-              mechanical and documentation support for industry.
+              mechanical and documentation support for Australian industry.
             </p>
             <div className="mt-5 flex gap-3">
               {[FiLinkedin, FiTwitter, FiFacebook].map((Icon, i) => (

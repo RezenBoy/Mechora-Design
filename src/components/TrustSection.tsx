@@ -14,7 +14,7 @@ const items = [
   { icon: FiUsers, label: "Experienced Engineers" },
   { icon: FiClock, label: "Fast Turnaround" },
   { icon: FiFileText, label: "Quality Documentation" },
-  { icon: FiFlag, label: "Industry Ready" },
+  { icon: FiFlag, label: "Australian Industry Ready" },
 ];
 
 export default function TrustSection() {

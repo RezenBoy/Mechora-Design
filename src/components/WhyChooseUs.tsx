@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { FiCheck } from "react-icons/fi";
 import SectionTitle from "./ui/SectionTitle";
+import guardsPhoto from "../assets/images/industrial-guards.jpg";
 
 const points = [
   "Precision CAD Modeling",
@@ -13,7 +14,7 @@ const points = [
 
 export default function WhyChooseUs() {
   return (
-    <section id="why-us" className="bg-card py-24">
+    <section id="why-us" className="overflow-hidden bg-card py-24">
       <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-16 px-6 lg:grid-cols-2 lg:px-10">
         <motion.div
           initial={{ opacity: 0, x: -24 }}
@@ -23,8 +24,14 @@ export default function WhyChooseUs() {
           className="relative order-2 lg:order-1"
         >
           <div className="relative aspect-[4/5] w-full max-w-md overflow-hidden rounded-sm border border-line bg-primary">
-            <div className="absolute inset-0 blueprint-grid" />
-            <TrussIllustration />
+            <img
+              src={guardsPhoto}
+              alt="Engineered industrial machine guarding and platform railing with CAD detail callouts"
+              loading="lazy"
+              className="h-full w-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-primary/70 via-primary/10 to-transparent" />
+            <div className="absolute inset-0 blueprint-grid opacity-40" />
           </div>
           <div className="absolute -bottom-6 -right-4 rounded-sm border border-line bg-white px-5 py-4 shadow-[0_20px_44px_-18px_rgba(11,31,51,0.3)] sm:right-6">
             <div className="font-heading text-2xl font-bold text-primary">12+</div>
@@ -59,33 +66,5 @@ export default function WhyChooseUs() {
         </div>
       </div>
     </section>
-  );
-}
-
-function TrussIllustration() {
-  return (
-    <svg viewBox="0 0 400 500" className="absolute inset-0 h-full w-full" fill="none">
-      <g stroke="#2E86DE" strokeWidth="1.6" opacity="0.85">
-        <line x1="60" y1="440" x2="60" y2="120" />
-        <line x1="340" y1="440" x2="340" y2="120" />
-        <line x1="60" y1="120" x2="340" y2="120" />
-        {Array.from({ length: 6 }).map((_, i) => {
-          const y = 160 + i * 55;
-          return <line key={i} x1="60" y1={y} x2="340" y2={y} opacity="0.35" />;
-        })}
-        {Array.from({ length: 5 }).map((_, i) => {
-          const x1 = 60 + i * 56;
-          return (
-            <line key={`d-${i}`} x1={x1} y1="120" x2={x1 + 56} y2="440" opacity="0.5" />
-          );
-        })}
-      </g>
-      <g fill="#2E86DE">
-        <circle cx="60" cy="120" r="4" />
-        <circle cx="340" cy="120" r="4" />
-        <circle cx="60" cy="440" r="4" />
-        <circle cx="340" cy="440" r="4" />
-      </g>
-    </svg>
   );
 }

@@ -8,6 +8,11 @@ import {
 } from "react-icons/fi";
 import SectionTitle from "./ui/SectionTitle";
 import ServiceCard from "./ui/ServiceCard";
+import steelStructure from "../assets/images/steel-structure.jpg";
+import drafting3dAssembly from "../assets/images/drafting-3d-assembly.jpg";
+import mechanicalDesign from "../assets/images/mechanical-design-drafting.jpg";
+import pipingSystem from "../assets/images/piping-system.jpg";
+import industrialGuards from "../assets/images/industrial-guards.jpg";
 
 const services = [
   {
@@ -15,7 +20,8 @@ const services = [
     code: "01",
     title: "Structural Steel Detailing",
     description:
-      "Fabrication-ready detailing for structural steel frameworks, connections, platforms and support structures, built to standards.",
+      "Fabrication-ready detailing for structural steel frameworks, connections, platforms and support structures, built to Australian standards.",
+    image: steelStructure,
   },
   {
     icon: FiBox,
@@ -23,6 +29,7 @@ const services = [
     title: "Steel Modeling",
     description:
       "Accurate 3D structural steel models coordinated across disciplines, ready for fabrication, erection and clash detection.",
+    image: drafting3dAssembly,
   },
   {
     icon: FiSettings,
@@ -30,6 +37,7 @@ const services = [
     title: "Mechanical Design",
     description:
       "Machine enclosures, safety guards and mechanical components designed for manufacturability, safety and performance.",
+    image: mechanicalDesign,
   },
   {
     icon: FiGitBranch,
@@ -37,6 +45,7 @@ const services = [
     title: "Piping Design",
     description:
       "Piping layouts, isometrics and support design for industrial plants, engineered for accuracy and code compliance.",
+    image: pipingSystem,
   },
   {
     icon: FiPenTool,
@@ -44,6 +53,7 @@ const services = [
     title: "CAD Drafting",
     description:
       "Precise 2D and 3D CAD drafting for assembly drawings, general arrangements and manufacturing documentation.",
+    image: industrialGuards,
   },
   // {
   //   icon: FiClipboard,

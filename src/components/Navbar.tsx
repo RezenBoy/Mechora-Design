@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import Button from "./ui/Button";
-import Logo from "../../public/brandLogo.png";
+import Logo from "../assets/brandLogo.png";
 
 const links = [
   { label: "Home", href: "#home" },
@@ -27,25 +27,16 @@ export default function Navbar() {
       className={`fixed top-0 z-50 w-full transition-all duration-300 ${scrolled ? "bg-white/95 backdrop-blur shadow-[0_4px_24px_-8px_rgba(11,31,51,0.15)]" : "bg-transparent"
         }`}
     >
-      <nav className="mx-auto flex h-20 max-w-7xl items-center justify-between px-8">
-        <a href="#home" className="flex items-center gap-3">
+      <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-10">
+        <a href="#home" className="flex items-center gap-2.5 focus-ring rounded-sm">
           <img
             src={Logo}
-            alt="Mechora"
-            className="h-10 w-16 object-contain"
+            alt="Mechora Designs"
+            className="h-14 w-auto object-contain"
           />
-
-          <div className="leading-none">
-            <h1
-              className={`font-heading text-2xl font-bold ${scrolled ? "text-primary" : "text-white"
-                }`}
-            >
-              MECHORA{" "}
-              <span className="text-secondary">
-                DESIGNS
-              </span>
-            </h1>
-          </div>
+          <span className={`font-heading text-lg font-bold tracking-tight ${scrolled ? "text-primary" : "text-white"}`}>
+            MECHORA <span className={scrolled ? "text-secondary" : "text-accent"}>DESIGNS</span>
+          </span>
         </a>
 
         <ul className="hidden items-center gap-9 lg:flex">

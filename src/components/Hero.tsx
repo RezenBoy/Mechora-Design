@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import Button from "./ui/Button";
 import { FiArrowRight } from "react-icons/fi";
+import heroBackdrop from "../assets/images/steel-structure.jpg";
 
 const stats = [
   { value: "150+", label: "Projects Delivered" },
@@ -12,9 +13,15 @@ const stats = [
 export default function Hero() {
   return (
     <section id="home" className="relative flex min-h-screen items-center overflow-hidden bg-primary pt-28 pb-20">
-      {/* Industrial backdrop: steel truss silhouette + blueprint grid, built in CSS/SVG rather than stock photography */}
+      {/* Industrial backdrop: real structural-steel photography, blueprint grid overlay for the signature technical layer */}
+      <img
+        src={heroBackdrop}
+        alt=""
+        aria-hidden="true"
+        className="absolute inset-0 h-full w-full object-cover opacity-45"
+      />
       <div className="absolute inset-0 blueprint-grid" aria-hidden="true" />
-      <div className="absolute inset-0 bg-gradient-to-b from-primary/60 via-primary/85 to-primary" aria-hidden="true" />
+      <div className="absolute inset-0 bg-gradient-to-b from-primary/70 via-primary/85 to-primary" aria-hidden="true" />
       <svg
         className="absolute bottom-0 left-0 w-full opacity-[0.18]"
         viewBox="0 0 1440 260"
@@ -58,7 +65,7 @@ export default function Hero() {
             className="mt-6 max-w-xl text-base leading-relaxed text-slate-300 sm:text-lg"
           >
             Professional CAD drafting, structural steel detailing, mechanical design and
-            piping systems for industry.
+            piping systems for Australian industry.
           </motion.p>
 
           <motion.div
