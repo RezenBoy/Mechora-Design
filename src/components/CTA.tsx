@@ -33,7 +33,7 @@ export default function CTA() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="mt-9"
         >
-          <Button variant="primary" as="a" href="mailto:hello@mechoradesigns.com.au" icon={<FiArrowRight />}>
+          <Button variant="primary" as="a" href="mailto:mechoradesigns@gmail.com" icon={<FiArrowRight />}>
             Get Free Consultation
           </Button>
         </motion.div>

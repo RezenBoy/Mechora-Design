@@ -88,9 +88,9 @@ export default function Footer() {
               <li className="flex items-center gap-2.5">
                 <FiPhone className="text-accent" /> +91 84279 85803
               </li>
-              <li className="flex items-center gap-2.5">
+              {/* <li className="flex items-center gap-2.5">
                 <FiMapPin className="text-accent" /> Sydney, NSW, Australia
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
