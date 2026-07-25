@@ -45,7 +45,7 @@ export default function Hero() {
             transition={{ duration: 0.6 }}
             className="mb-6 inline-flex items-center gap-2 rounded-sm border border-accent/30 bg-accent/10 px-4 py-1.5 font-mono text-xs uppercase tracking-[0.2em] text-accent"
           >
-            Engineering Design &amp; Detailing — Australia
+            Engineering Design &amp; Detailing — AUS/NZ
           </motion.div>
 
           <motion.h1
