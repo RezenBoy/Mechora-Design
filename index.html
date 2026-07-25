@@ -1,28 +1,90 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-AU">
+  <head>
+    <meta charset="UTF-8" />
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="./src/assets/favicon.svg" />
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-46EZ0HMT3Z"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+    <!-- ============ Core meta ============ -->
+    <title>Mechora Designs | Engineering CAD & Structural Design Solutions Australia</title>
+    <meta
+      name="description"
+      content="Mechora Designs provides structural steel detailing, mechanical design, CAD drafting, piping design and engineering documentation for industrial, mining, construction and manufacturing clients across Australia."
+    />
+    <meta
+      name="keywords"
+      content="CAD drafting Australia, structural steel detailing, mechanical design, 3D CAD modeling, piping design, structural engineering design, fabrication drawings, engineering documentation, shop drawings"
+    />
+    <meta name="author" content="Mechora Designs" />
+    <meta name="robots" content="index, follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0B1F33" />
 
-    gtag('config', 'G-46EZ0HMT3Z');
-  </script>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mechora Designs | Engineering CAD & Structural Design Solutions Australia</title>
-  <meta name="description"
-    content="Professional engineering CAD drafting, structural steel detailing, mechanical design, piping systems and fabrication drawings for Australian industries." />
-  <meta name="theme-color" content="#0B1F33" />
-</head>
+    <!-- ============ Canonical ============ -->
+    <!-- TODO: replace with your live production domain once deployed -->
+    <link rel="canonical" href="https://www.mechoradesigns.com/" />
 
-<body>
-  <div id="root"></div>
-  <script type="module" src="/src/main.tsx"></script>
-</body>
+    <!-- ============ Favicon ============ -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 
+    <!-- ============ Open Graph / Facebook / LinkedIn ============ -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Mechora Designs" />
+    <meta property="og:title" content="Mechora Designs | Engineering CAD & Structural Design Solutions" />
+    <meta
+      property="og:description"
+      content="Professional CAD drafting, structural steel detailing, mechanical design, piping systems and engineering documentation for Australian industry."
+    />
+    <meta property="og:image" content="https://www.mechoradesigns.com/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:url" content="https://www.mechoradesigns.com/" />
+    <meta property="og:locale" content="en_AU" />
+
+    <!-- ============ Twitter Card ============ -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Mechora Designs | Engineering CAD & Structural Design Solutions" />
+    <meta
+      name="twitter:description"
+      content="Professional CAD drafting, structural steel detailing, mechanical design, piping systems and engineering documentation for Australian industry."
+    />
+    <meta name="twitter:image" content="https://www.mechoradesigns.com/og-image.jpg" />
+
+    <!-- ============ Fonts: preconnect + non-blocking stylesheet ============ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    />
+
+    <!-- ============ Structured data: Organization / ProfessionalService ============ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Mechora Designs",
+      "description": "Engineering design consultancy providing structural steel detailing, mechanical design, CAD drafting, piping design and engineering documentation for Australian industry.",
+      "url": "https://www.mechoradesigns.com/",
+      "logo": "https://www.mechoradesigns.com/logo.png",
+      "image": "https://www.mechoradesigns.com/og-image.jpg",
+      "email": "hello@mechoradesigns.com.au",
+      "areaServed": "AU",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Sydney",
+        "addressRegion": "NSW",
+        "addressCountry": "AU"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/mechora-designs",
+        "https://www.facebook.com/mechoradesigns"
+      ]
+    }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
