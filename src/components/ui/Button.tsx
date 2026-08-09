@@ -1,6 +1,6 @@
 import { useState, type ButtonHTMLAttributes, type ReactNode, type MouseEvent } from "react";
 
-type Variant = "primary" | "outline" | "ghost";
+type Variant = "primary" | "outline" | "ghost" | "whatsapp";
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: Variant;
@@ -8,6 +8,8 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   icon?: ReactNode;
   as?: "button" | "a";
   href?: string;
+  target?: string;
+  rel?: string;
 }
 
 interface Ripple {
@@ -23,6 +25,8 @@ const variantStyles: Record<Variant, string> = {
     "bg-transparent text-white border border-white/40 hover:border-white hover:bg-white/10",
   ghost:
     "bg-white text-primary border border-line hover:border-accent hover:text-secondary",
+  whatsapp:
+    "bg-[#25D366] text-white hover:bg-[#1ebe5d] shadow-[0_8px_24px_-8px_rgba(37,211,102,0.55)]",
 };
 
 export default function Button({
@@ -32,6 +36,8 @@ export default function Button({
   className = "",
   as = "button",
   href,
+  target,
+  rel,
   ...props
 }: ButtonProps) {
   const [ripples, setRipples] = useState<Ripple[]>([]);
@@ -69,7 +75,13 @@ export default function Button({
 
   if (as === "a" && href) {
     return (
-      <a href={href} className={classes} onClick={handleClick as unknown as (e: MouseEvent<HTMLAnchorElement>) => void}>
+      <a
+        href={href}
+        target={target}
+        rel={rel}
+        className={classes}
+        onClick={handleClick as unknown as (e: MouseEvent<HTMLAnchorElement>) => void}
+      >
         {content}
       </a>
     );

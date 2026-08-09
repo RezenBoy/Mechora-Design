@@ -1,6 +1,13 @@
 import { motion } from "framer-motion";
 import { FiArrowRight } from "react-icons/fi";
+import { FaWhatsapp } from "react-icons/fa";
 import Button from "./ui/Button";
+
+const EMAIL = "mechoradesigns@gmail.com";
+const PHONE_NUMBER = "+919646458242";
+const WHATSAPP_MESSAGE = encodeURIComponent(
+  "Hi, I'm interested in your work. Please share more details."
+);
 
 export default function CTA() {
   return (
@@ -31,10 +38,20 @@ export default function CTA() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="mt-9"
+          className="mt-9 flex flex-col items-center justify-center gap-4 sm:flex-row"
         >
-          <Button variant="primary" as="a" href="mailto:mechoradesigns@gmail.com" icon={<FiArrowRight />}>
+          <Button variant="primary" as="a" href={`mailto:${EMAIL}`} icon={<FiArrowRight />}>
             Get Free Consultation
+          </Button>
+          <Button
+            variant="whatsapp"
+            as="a"
+            href={`https://wa.me/${PHONE_NUMBER.replace("+", "")}?text=${WHATSAPP_MESSAGE}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            icon={<FaWhatsapp size={18} />}
+          >
+            Chat on WhatsApp
           </Button>
         </motion.div>
       </div>
