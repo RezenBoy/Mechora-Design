@@ -83,7 +83,7 @@ export default function Footer() {
             </h4>
             <ul className="space-y-3 text-sm">
               <li className="flex items-center gap-2.5">
-                <FiMail className="text-accent" /> mechoradesigns@gmail.com
+                <FiMail className="text-accent" /> info@mechoradesigns.com
               </li>
               <li className="flex items-center gap-2.5">
                 <FiPhone className="text-accent" /> +91 96464 58242
