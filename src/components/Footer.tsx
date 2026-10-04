@@ -86,7 +86,7 @@ export default function Footer() {
                 <FiMail className="text-accent" /> info@mechoradesigns.com
               </li>
               <li className="flex items-center gap-2.5">
-                <FiPhone className="text-accent" /> +91 96464 58242
+                <FiPhone className="text-accent" /> +91 83605 63616
               </li>
               {/* <li className="flex items-center gap-2.5">
                 <FiPhone className="text-accent" /> +91 84279 85803

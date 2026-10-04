@@ -4,7 +4,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import Button from "./ui/Button";
 
 const EMAIL = "info@mechoradesigns.com";
-const PHONE_NUMBER = "+919646458242";
+const PHONE_NUMBER = "+918360563616";
 const WHATSAPP_MESSAGE = encodeURIComponent(
   "Hi, I'm interested in your work. Please share more details."
 );
